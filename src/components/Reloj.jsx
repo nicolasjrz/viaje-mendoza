@@ -12,7 +12,7 @@ export const Reloj = ({ days, hours, minutes, seconds }) => {
       alignItems={"center"}
     >
       <CardReloj value={days} type={"dias"} />
-      <CardReloj value={hours} type={"hora"} />
+      <CardReloj value={hours} type={"horas"} />
       <CardReloj value={minutes} type={"minutos"} />
       <CardReloj value={seconds} type={"segundos"} />
     </Stack>
