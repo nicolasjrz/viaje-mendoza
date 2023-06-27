@@ -3,6 +3,7 @@ import { useFechas } from "../hooks/useFechas";
 import { Reloj } from "../components/Reloj";
 import { Particulas } from "../components/Particulas";
 import GifPlayer from "../components/GifPlayer";
+import { Emojis } from "../components/Emojis";
 
 // eslint-disable-next-line react/prop-types
 export const HomePage = ({ isLoading }) => {
@@ -10,13 +11,24 @@ export const HomePage = ({ isLoading }) => {
 
   return (
     <Stack p={3} sx={{ visibility: isLoading ? "visible" : "hidden" }}>
-      <Typography
-        className="title"
-        variant="h2"
-        sx={{ fontFamily: "Bebas", color: "#101010" }}
+      <Stack
+        sx={{
+          flexDirection: { lg: "row" },
+          justifyContent: "center",
+          alignItems: "center",
+        }}
       >
-        Viaje a Mendoza con cami
-      </Typography>
+        <Typography
+          className="title"
+          variant="h2"
+          sx={{ fontFamily: "Bebas", color: "#101010" }}
+        >
+          Viaje a Mendoza con cami
+        </Typography>
+        <Typography>
+          <Emojis />
+        </Typography>
+      </Stack>
 
       <Stack mt={1}>
         {days === "00" &&
