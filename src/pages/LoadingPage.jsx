@@ -8,7 +8,7 @@ export const LoadingPage = () => {
     // Simulación de carga de datos
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Aquí puedes ajustar el tiempo de carga simulada según tus necesidades
+    }, 1500); // Aquí puedes ajustar el tiempo de carga simulada según tus necesidades
   }, []);
 
   return (

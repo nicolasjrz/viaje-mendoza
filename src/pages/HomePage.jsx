@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { useFechas } from "../hooks/useFechas";
 import { Reloj } from "../components/Reloj";
 import { Particulas } from "../components/Particulas";
@@ -10,7 +10,11 @@ export const HomePage = ({ isLoading }) => {
   const { days, hours, minutes, seconds } = useFechas();
 
   return (
-    <Stack p={3} sx={{ visibility: isLoading ? "visible" : "hidden" }}>
+    <Stack
+      p={3}
+      sx={{ visibility: isLoading ? "visible" : "hidden" }}
+      className="animate__animated  animate__bounceInDown"
+    >
       <Stack
         sx={{
           flexDirection: { lg: "row" },
@@ -35,10 +39,10 @@ export const HomePage = ({ isLoading }) => {
         hours === "00" &&
         minutes === "00" &&
         seconds === "00" ? (
-          <>
+          <Box>
             <Particulas />
             <GifPlayer />
-          </>
+          </Box>
         ) : (
           <Reloj
             days={days}

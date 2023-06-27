@@ -9,7 +9,7 @@ function App() {
     // Simulación de carga de datos
     setTimeout(() => {
       setIsLoading(true);
-    }, 3000); // Aquí puedes ajustar el tiempo de carga simulada según tus necesidades
+    }, 1700); // Aquí puedes ajustar el tiempo de carga simulada según tus necesidades
   }, []);
 
   return (

@@ -8,7 +8,8 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
   font-family: 'Anton', sans-serif;
-
+  --animate-duration: 800ms;
+  --animate-delay: 300s;
 }
 
 @font-face {
@@ -16,7 +17,9 @@
   src: local('Bebas'), url(./assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf) format('truetype');
 }
 
-
+.animate__animated.animate__bounceInDown {
+  --animate-duration: 4s;
+}
 
 body {
   margin: 0;
