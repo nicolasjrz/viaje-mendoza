@@ -14,7 +14,9 @@ export const CardReloj = ({ value, type }) => {
         flexDirection: "column", // Agregamos esta línea para mostrar los elementos en columna
       }}
     >
-      <Typography sx={{ fontSize: 55, fontWeight: 300 }}>{value}</Typography>
+      <Typography sx={{ fontSize: 55, fontWeight: 300, color: "#101010" }}>
+        {value}
+      </Typography>
       <Typography>{type}</Typography>
     </Paper>
   );

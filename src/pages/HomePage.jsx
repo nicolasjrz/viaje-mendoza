@@ -10,7 +10,11 @@ export const HomePage = ({ isLoading }) => {
 
   return (
     <Stack p={3} sx={{ visibility: isLoading ? "visible" : "hidden" }}>
-      <Typography className="title" variant="h2" sx={{ fontFamily: "Bebas" }}>
+      <Typography
+        className="title"
+        variant="h2"
+        sx={{ fontFamily: "Bebas", color: "#101010" }}
+      >
         Viaje a Mendoza con cami
       </Typography>
 
