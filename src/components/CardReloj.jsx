@@ -6,18 +6,34 @@ export const CardReloj = ({ value, type }) => {
     <Paper
       elevation={3}
       sx={{
-        width: 120,
+        width: 130,
         height: 120,
         display: "flex",
-        justifyContent: "center",
+
         alignItems: "center",
         flexDirection: "column", // Agregamos esta línea para mostrar los elementos en columna
       }}
     >
-      <Typography sx={{ fontSize: 55, fontWeight: 300, color: "#101010" }}>
+      <Typography
+        mt={1}
+        sx={{
+          fontSize: 50,
+          color: "#101010",
+          fontFamily: "Bebas",
+        }}
+      >
         {value}
       </Typography>
-      <Typography>{type}</Typography>
+      <Typography
+        sx={{
+          fontSize: 18,
+
+          color: "#101010",
+          fontFamily: "Bebas",
+        }}
+      >
+        {type}
+      </Typography>
     </Paper>
   );
 };
