@@ -21,7 +21,7 @@ export const HomePage = ({ isLoading }) => {
         <Typography
           className="title"
           variant="h2"
-          sx={{ fontFamily: "Bebas", color: "#101010" }}
+          sx={{ fontFamily: "Bebas", color: "#464545" }}
         >
           Viaje a Mendoza con cami
         </Typography>

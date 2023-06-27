@@ -18,7 +18,7 @@ export const CardReloj = ({ value, type }) => {
         mt={1}
         sx={{
           fontSize: 50,
-          color: "#101010",
+          color: "#464545",
           fontFamily: "Bebas",
         }}
       >
@@ -28,7 +28,7 @@ export const CardReloj = ({ value, type }) => {
         sx={{
           fontSize: 18,
 
-          color: "#101010",
+          color: "#464545",
           fontFamily: "Bebas",
         }}
       >
