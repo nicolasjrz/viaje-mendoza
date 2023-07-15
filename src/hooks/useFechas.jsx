@@ -5,7 +5,7 @@ export const useFechas = () => {
   const [hours, setHours] = useState("00");
   const [minutes, setMinutes] = useState("00");
   const [seconds, setSeconds] = useState("00");
-  const [finishDate] = useState("17 Jul 2023 14:40:00"); // Agrega la hora deseada a la fecha de finalización
+  const [finishDate] = useState("17 Jul 2023 11:30:00"); // Agrega la hora deseada a la fecha de finalización
   // const [finishDate] = useState("27 Jun 2023 04:06:00"); // Agrega la hora deseada a la fecha de finalización
 
   const formatTime = (time) => {
